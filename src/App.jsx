@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 function App() {
   return (
-    <div className="grid h-[1244px] w-[1440px] grid-cols-[256px_1fr] grid-rows-[auto_1fr] bg-[#FAF9F8]">
+    <div className="grid h-[1244px] w-[1440px] grid-cols-[256px_1fr] grid-rows-[auto_1fr] bg-[#FAF9F8] font-sans">
       <div className="sticky left-[265px] flex max-h-[116px] max-w-[1175px] flex-row gap-[10px] bg-[#FFFFFF] p-[30px]">
         <div className="flex max-h-[56px] max-w-[1115px] flex-row items-center justify-center gap-[183.4px]">
           <div className="flex max-h-[24px] max-w-[141px] flex-row items-center justify-center gap-[30px]">
@@ -16,7 +16,7 @@ function App() {
             <div className="h-[24px] w-[24px]">
               <img src="/images/Stockholm-icons/General/Search.svg" />
             </div>
-            <div className="text-center text-[12px] font-normal leading-[14.4px]">
+            <div className="text-center text-[12px] font-normal leading-[14.4px] text-[#BBBBBB]">
               Search by sales, products, attendants, branch
             </div>
           </div>

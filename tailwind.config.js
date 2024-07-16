@@ -8,11 +8,12 @@ export default {
       tight: "-.02em",
       normal: "0",
     },
-    fontFamily: {
-      sans: "Lato, sans-serif",
-    },
 
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Lato, sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
