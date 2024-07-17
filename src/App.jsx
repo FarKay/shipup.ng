@@ -1,59 +1,52 @@
 /* eslint-disable react/no-unescaped-entities */
 function App() {
   return (
-    <div className="grid h-[1244px] w-[1440px] grid-cols-[256px_1fr] grid-rows-[auto_1fr] bg-[#FAF9F8] font-sans">
-      <div className="sticky left-[265px] flex max-h-[116px] max-w-[1175px] flex-row gap-[10px] bg-[#FFFFFF] p-[30px]">
-        <div className="flex max-h-[56px] max-w-[1115px] flex-row items-center justify-center gap-[183.4px]">
-          <div className="flex max-h-[24px] max-w-[141px] flex-row items-center justify-center gap-[30px]">
-            <div className="flex h-[24px] w-[24px] items-center">
+    <div className="mx-auto grid h-screen w-[1440px] grid-cols-[256px_1fr] grid-rows-[auto_1fr] overflow-hidden bg-[#FAF9F8] font-sans">
+      <div className="h-[116px] bg-[#FFFFFF] p-[30px]">
+        <div className="flex h-[56px] flex-row justify-between">
+          <div className="flex flex-row items-center justify-center gap-[30px]">
+            <button>
               <img src="/images/menu.png" />
-            </div>
-            <div className="text-[16px] font-bold leading-[16px]">
+            </button>
+            <span className="text-[16px] font-bold leading-[16px] text-[#4F4F4F]">
               Dashboard
-            </div>
+            </span>
           </div>
-          <div className="flex h-[56px] w-[302px] flex-row items-center gap-[10px] rounded-[24px] bg-[#F8F9FA] p-[16px]">
-            <div className="h-[24px] w-[24px]">
-              <img src="/images/Stockholm-icons/General/Search.svg" />
+          <div className="flex w-[302px] flex-row items-center justify-center gap-[10px] rounded-[24px] bg-[#F8F9FA] p-[16px]">
+            <div className="h-[24px] w-[24px] cursor-pointer">
+              <img src="/images/Stockholm-icons/General/search.png" />
             </div>
-            <div className="text-center text-[12px] font-normal leading-[14.4px] text-[#BBBBBB]">
-              Search by sales, products, attendants, branch
-            </div>
+            <input
+              type="text"
+              placeholder="Search by sales, products, attendants, branch"
+              className="w-[236px] bg-[#F8F9FA] placeholder:text-[12px] placeholder:font-normal placeholder:leading-[14.4px] placeholder:text-[#BBBBBB] focus:outline-none"
+            />
           </div>
-          <div className="flex max-h-[56px] max-w-[307px] flex-row gap-[50px]">
-            <div className="h-[46px] w-[46px]">
-              <div className="flex h-[46px] w-[46px] items-center justify-center rounded-[12px] bg-[#F8F8FA]">
-                <div className="h-[24px] w-[27.2px] bg-[#F6F8FB]">
-                  <img src="/images/notifications.png" />
-                </div>
-              </div>
+          <div className="flex flex-row items-center gap-[50px]">
+            <div className="flex h-[46px] w-[46px] cursor-pointer items-center justify-center rounded-[12px] border-[2px] border-[#F6F8FB] bg-[#F6F8FB]">
+              <img src="/images/notifications.png" />
             </div>
-            <div className="flex h-[56px] w-[211px] flex-row items-center justify-between">
-              <div className="flex h-[56px] w-[145px] flex-row items-center justify-between rounded-[16px]">
-                <div className="h-[56px] w-[56px] rounded-[16px]">
-                  <img src="/images/profile-pic.png" />
-                </div>
-                <div className="flex h-[38px] w-[73px] flex-col items-center justify-center">
-                  <div className="font-meduim text-[14px] leading-[16.8px] text-[#9593A0]">
+            <div className="flex flex-row items-center gap-[20px]">
+              <div className="flex flex-row gap-[10px]">
+                <img src="/images/profile-pic.png" />
+                <div className="flex flex-col items-center justify-center">
+                  <span className="text-[14px] font-bold leading-[16.8px] text-[#9593A0]">
                     Tiger Shroff
-                  </div>
-                  <div className="text-[12px] font-medium leading-[14.4px] text-[#BBBBBB]">
-                    ID:{" "}
-                    <span className="text-[12px] font-semibold leading-[14.4px]">
-                      1234567
-                    </span>
-                  </div>
+                  </span>
+                  <span className="text-[12px] font-medium leading-[14.4px] text-[#BBBBBB]">
+                    ID: <span className="font-semibold">1234567</span>
+                  </span>
                 </div>
               </div>
-              <div className="flex h-[36px] w-[36px] items-center justify-center rounded-[12px] bg-[#F0F4FF]">
+              <button className="flex h-[36px] w-[36px] items-center justify-center rounded-[12px] bg-[#F0F4FF]">
                 <img src="/images/arrow-down.png" />
-              </div>
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="row-span-full flex h-[1244px] w-[265px] flex-col gap-[50px] bg-[#FFFFFF] px-0 pb-[50px] pt-0">
+      <div className="row-span-full flex w-[265px] flex-col gap-[50px] bg-[#FFFFFF] px-0 pb-[50px] pt-0">
         <div className="max-h-[58px] max-w-[265px] bg-[#FAFAFA] py-[17px] pl-[224px] pr-[17px]">
           <div className="max-h-[24px] max-w-[24px]">
             <img src="/images/chevron-left.png" />
@@ -116,8 +109,8 @@ function App() {
         </div>
       </div>
 
-      <div className="absolute left-[265px] top-[146px] mx-auto flex max-h-[1096px] max-w-[1175px] flex-col">
-        <div className="mx-auto flex max-h-[111px] max-w-[1115px] flex-row gap-[30px]">
+      <div className="left-[265px] top-[146px] mx-auto flex h-full max-w-[1175px] flex-col overflow-y-auto pt-[30px]">
+        <div className="mx-auto flex max-h-[111px] flex-row gap-[20px]">
           <div className="max-h-[111px] w-[256.25px] gap-[10px] rounded-[10px] bg-[#FFFFFF] p-[30px]">
             <div className="flex max-h-[51px] max-w-[211px] flex-row gap-[20px]">
               <div className="h-[50px] w-[50px]">
@@ -202,9 +195,9 @@ function App() {
                   <div className="text-[12px] font-bold leading-[14.4px] text-[#141414]">
                     This Week
                   </div>
-                  <div className="flex h-[36px] w-[36px] items-center justify-center rounded-[12px] bg-[#F0F4FF]">
+                  <button className="flex h-[36px] w-[36px] items-center justify-center rounded-[12px] bg-[#F0F4FF]">
                     <img src="/images/arrow-down-blue.png" />
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>
@@ -326,7 +319,7 @@ function App() {
           </div>
         </div>
 
-        <div className="flex max-h-[534px] max-w-[1175px] flex-row gap-[30px] px-[30px] pb-[30px] pt-0">
+        <div className="flex max-h-[534px] max-w-[1175px] flex-row gap-[20px] px-[30px] pb-[30px] pt-0">
           <div className="flex max-h-[504px] max-w-[598px] flex-col gap-[30px] rounded-[20px] bg-[#FFFFFF] p-[30px]">
             <div className="flex h-[36px] w-[534px] flex-row items-center justify-between rounded-[8px]">
               <div className="text-[14px] font-bold leading-[16.8px] text-[#4F4F4F]">
@@ -336,9 +329,9 @@ function App() {
                 <span className="text-[12px] font-bold leading-[14.4px] text-[#2C2B5D]">
                   In Europe
                 </span>
-                <div className="flex h-[36px] w-[36px] items-center justify-center rounded-[12px] bg-[#F0F4FF]">
+                <button className="flex h-[36px] w-[36px] items-center justify-center rounded-[12px] bg-[#F0F4FF]">
                   <img src="/images/arrow-down-blue.png" />
-                </div>
+                </button>
               </div>
             </div>
             <div>
